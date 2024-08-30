@@ -1,7 +1,6 @@
-// Dichiarazione globale delle parole
-let parole = []; 
+// Assicurati che 'parole' sia dichiarata una sola volta globalmente
+let parole = [];  // Dichiarazione globale
 
-// Funzione per avviare il gioco
 function startGame() {
     console.log('Start Game Clicked');
     
@@ -52,7 +51,6 @@ function startGame() {
         });
 }
 
-// Funzione per iniziare un round
 function startRound(nomiGiocatori, tempoPerGiocatore) {
     let currentPlayerIndex = 0;
 
@@ -97,10 +95,9 @@ function startRound(nomiGiocatori, tempoPerGiocatore) {
 
     nextPlayer();
 }
-// Dichiarazione globale delle parole
-let parole = []; 
+// Assicurati che 'parole' sia dichiarata una sola volta globalmente
+let parole = [];  // Dichiarazione globale
 
-// Funzione per avviare il gioco
 function startGame() {
     console.log('Start Game Clicked');
     
@@ -151,7 +148,6 @@ function startGame() {
         });
 }
 
-// Funzione per iniziare un round
 function startRound(nomiGiocatori, tempoPerGiocatore) {
     let currentPlayerIndex = 0;
 

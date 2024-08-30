@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioco delle Parole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gioco delle Parole</h1>
+
+        <!-- Sezione di configurazione -->
+        <div class="configurazione">
+            <h2>Configurazione Locale</h2>
+            <label for="numGiocatori">Numero di Giocatori:</label>
+            <input type="number" id="numGiocatori" min="1" value="1">
+
+            <div id="giocatoriNomi">
+                <!-- I campi dei nomi dei giocatori verranno generati dinamicamente -->
+            </div>
+
+            <label for="tempoPerGiocatore">Tempo per Giocatore (secondi):</label>
+            <input type="number" id="tempoPerGiocatore" min="10" value="30">
+
+            <button id="startGame">Inizia Gioco</button>
+        </div>
+
+        <!-- Sezione di gioco -->
+        <div class="gioco" id="gameSection" style="display:none;">
+            <h2 id="nomeGiocatoreCorrente"></h2>
+            <p id="parolaIndizio"></p>
+            <input type="text" id="inputParola">
+            <button id="submitParola">Invia</button>
+            <p id="timer"></p>
+            <p id="risultato"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
